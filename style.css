@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pattern-border-radius: 10px;
+}
+
+.slide__container {
+    height: 350px;
+    width: 600px;
+    position: absolute;
+    left: 27.5%;
+    top: 23.5%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 20px 30px #00000088;
+    border-radius: var(--pattern-border-radius);
+}
+
+.slide__content {
+    height: 350px;
+    width: 600px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    border-radius: var(--pattern-border-radius);
+}
+
+.image {
+    width: 350px;
+    width: 600px;
+    transition: all 1s;
+}
+
+.image img {
+    width: 600px;
+    height: 350px;
+}
+
+.action__button {
+    font-size: 35pt;
+    font-weight: bold;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00000088;
+    user-select: none;
+    z-index: 1;
+}
+
+.action__button:hover {
+    background-color: #00000024;
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#previous {
+    border-radius: var(--pattern-border-radius) 0px 0px var(--pattern-border-radius);
+}
+
+#next {
+    border-radius: 0px var(--pattern-border-radius) var(--pattern-border-radius) 0px;
+}
